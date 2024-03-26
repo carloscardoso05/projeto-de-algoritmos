@@ -1,8 +1,6 @@
 package jogador_de_futebol
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type JogadorDeFutebol struct {
 	Nome         string
