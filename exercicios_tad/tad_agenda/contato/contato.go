@@ -10,13 +10,12 @@ type Contato struct {
 	numero   string
 }
 
-func CriarContato(nome string, numero string, endereco string) *Contato {
-	contato := Contato{
-		nome:     nome,
-		numero:   numero,
-		endereco: endereco,
-	}
-	return &contato
+func Criar(nome string, numero string, endereco string) Contato {
+	contato := Contato{}
+	contato.AlterarNome(nome)
+	contato.AlterarNumero(numero)
+	contato.AlterarEndereco(endereco)
+	return contato
 }
 
 func (c *Contato) Nome() string {
